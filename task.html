@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Expense Analyzer</title>
+  <link rel="stylesheet" href="task.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Smart Expense Analyzer</h1>
+
+    <div class="form">
+      <input type="text" id="name" placeholder="Expense name" />
+      <input type="number" id="amount" placeholder="Amount" />
+
+      <select id="category">
+        <option value="">Select category</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Bills">Bills</option>
+        <option value="Others">Others</option>
+      </select>
+
+      <button id="addBtn">Add Expense</button>
+    </div>
+
+    <p id="message"></p>
+
+    <div class="summary">
+      <h2>Total Spent: ₦<span id="total">0.00</span></h2>
+      <p id="insight"></p>
+    </div>
+
+    <ul id="list"></ul>
+  </div>
+
+  <script src="task.js"></script>
+</body>
+</html>
